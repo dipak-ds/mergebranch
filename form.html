@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Example</title>
+</head>
+<!-- head end -->
+<body>
+  <form>
+    <label for="uid">User ID</label>
+    <input type="text" name="uid" value="IN859YB" readonly><br><br>
+
+    <label for="uname">Username*</label>
+    <input type="email" name="uname" placeholder="abc@xyz.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+
+    <label for="password">Password*</label>
+    <input type="password" name="password" pattern=".{8,}" required> Note: Minimum 8 characters required<br><br>
+
+    <label for="gender">Gender</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="cars">
+      <option value="argentina">Argentina</option>
+      <option value="india">India</option>
+      <option value="brazil" disabled>Brazil</option>
+      <option value="jordan" disabled>Jordan</option>
+    </select><br><br>
+
+    <label for="known language">Known Language</label><br>
+    <input type="checkbox" id="hindi" name="hindi" value="Hindi">
+    <label for="hindi">Hindi</label><br>
+    <input type="checkbox" id="gujarati" name="gujarati" value="Gujarati">
+    <label for="gujarati">Gujarati</label><br>
+    <input type="checkbox" id="english" name="english" value="English">
+    <label for="english">English</label><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+</body>
+
+</html>
